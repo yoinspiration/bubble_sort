@@ -3,15 +3,15 @@ def bubble_sort(arr):
     n = len(arr)
 
     for i in range(n - 1):
-        isSorted = True
+        is_sorted = True
 
         # 每一轮都把较大的数放在靠后的位置
         for j in range(n - i - 1):
             if arr[j] > arr[j + 1]:
-                isSorted = False
+                is_sorted = False
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
-        if isSorted:
+        if is_sorted:
             break
 
     return arr
